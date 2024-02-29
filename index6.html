@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サーバの基本的な操作</title>
+    <link rel="stylesheet" href="style6.css" />
+    
+</head>
+<body>
+    <div class="button-container">
+        <a href="index.html" class="button" id="selfIntroButton">ホームに戻る</a>
+
+       
+    </div>
+    <div class="container">
+        <h1>Linuxコマンド概要</h1>
+        <p>①ファイル操作</p>
+        <p>②ファイル権限</p>
+        <p>③ユーザ・グループ</p>
+        <p>④ファイル表示・編集</p>      
+        <p>⑤プロセス操作</p>
+        <p>⑥サーバ操作</p>
+           
+ </div>    
+
+
+<div class="container">
+    <h1>サーバの基本的な操作</h1>
+ 
+    <!-- 外部HTMLを埋め込む -->
+    <iframe srcdoc='
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Linux Commands（ファイル操作編）</title>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Linux Commands（ファイル操作編）</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>コマンド</th>
+                        <th>説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ls</td>
+                        <td>ファイルやディレクトリの一覧を表示する</td>
+                    </tr>
+                    <tr>
+                        <td>cp</td>
+                        <td>ファイルのコピー</td>
+                    </tr>
+                    <tr>
+                        <td>mv</td>
+                        <td>ファイルの移動、名前の変更</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>rm</td>
+                        <td>ファイル、ディレクトリの削除</td>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td>カレントディレクトリを表示</td>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>カレントディレクトリの移動</td>
+                    </tr>
+                    <tr>
+                        <td>df</td>
+                        <td>ディスクの使用量</td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td>ファイルの使用量</td>
+                    </tr>
+                    <tr>
+                        <td>tar</td>
+                        <td>複数のファイルをまとめる</td>
+                    </tr>
+                    <tr>
+                        <td>zip</td>
+                        <td>ファイルをzip形式でまとめる</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
+' frameborder="0" width="100%" height="400"></iframe>
+
+</div>
+<div class="container">
+   
+    <!-- 外部HTMLを埋め込む -->
+    <iframe srcdoc='
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Linux Commands（オプション）</title>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Linux Commands（オプション）</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>lsコマンドのオプション</th>
+                        <th>説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-a</td>
+                        <td>隠しファイルを含むすべてのファイルの表示</td>
+                    </tr>
+                    <tr>
+                        <td>-l</td>
+                        <td>1行ずつ詳細に表示</td>
+                    </tr>
+                    <tr>
+                        <td>-al</td>
+                        <td>すべてのファイルの詳細の表示</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+
+
+        <body>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>cdコマンドの使い方</th>
+                        <th>説明</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cd ｛移動先のディレクトリ｝</td>
+                        <td>ディレクトリの移動</td>
+                    </tr>
+                    <tr>
+                        <td>cd オプション {コピーするファイル名} {コピー先ディレクトリ名} </td>
+                        <td>ファイルのコピー</td>
+                    </tr>
+                   
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>cdコマンドのオプション</th>
+                        <th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>-f</td>
+                        <td>強制的に上書き</td>
+                    </tr>
+                    <tr>
+                        <td>-p</td>
+                        <td>ファイルのパーミッション（アクセス権限の保持</td>
+                    </tr>
+                    <tr>
+                        <td>-r</td>
+                        <td>ディレクトリも含めて再帰的にコピー</td>
+                    </tr>
+                    <tr>
+                        <td>-v</td>
+                        <td>コピー中のファイル名の表示</td>
+                    </tr>
+                </thead>
+               
+            </table>
+        </body>
+
+        <body>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>mvコマンドの使い方</th>
+                        <th>説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>mv オプション {移動するファイル名} {移動先ディレクトリ}</td>
+                        <td>ファイルの移動、名前の変更</td>
+                    </tr>
+                    <tr>
+                        <th>mvコマンドのオプション</th>
+                        <th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>-f</td>
+                        <td>強制的に上書き</td>
+                    </tr>ym
+                    <tr>
+                        <td>-v</td>
+                        <td>移動中のファイル名の表示</td>
+                    </tr>
+                  
+                </tbody>
+                <body>
+            
+                    <table>
+                <tbody>
+
+
+                </tbody>
+           <
+           /body?>
+            </table>
+        </body>
+    </html>
+' frameborder="0" width="100%" height="400"></iframe>
+
+</div>
+
+
+
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function() {
+            // コピー対象のテキストを取得
+            var textToCopy = "<?php echo 'Hello PHP'; ?>";
+
+            // テキストエリアを作成し、テキストを設定
+            var textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+
+            // テキストエリアをページに追加
+            document.body.appendChild(textArea);
+
+            // テキストエリアを選択してコピー
+            textArea.select();
+            document.execCommand('copy');
+
+            // テキストエリアを削除
+            document.body.removeChild(textArea);
+
+            // コピー完了メッセージ
+            alert('Copied to Clipboard: ' + textToCopy);
+        });
+    </script>
+</body>
+</html>

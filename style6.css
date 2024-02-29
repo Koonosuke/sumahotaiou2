@@ -1,0 +1,42 @@
+ /* CSS スタイルを追加 */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+   
+        background: url('R.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(55, 172, 222, 0.877);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto; /* 上下に20pxのマージンを追加 */
+    padding: 20px;
+    background-color: rgba(155, 211, 203, 0.961);
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    height: auto; /* 高さを自動調整 */
+}
+pre {
+    background-color: #e8e2e2;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #555;
+}

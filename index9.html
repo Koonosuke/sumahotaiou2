@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaでTodoアプリ作ってみた</title>
+    <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+    <!-- メニューバー -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">ホームに戻る</a></li>
+        
+        </ul>
+        
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuBar = document.getElementById("menuBar");
+            if (menuBar.style.width === "100%") {
+                menuBar.style.width = "0";
+            } else {
+                menuBar.style.width = "100%";
+            }
+        }
+    </script>
+    <div class="container">
+        <h1>JavaTodoリスト制作の流れ</h1>
+        <ul>
+<li><a href ="index10.html">完成（まずは見てみよう）</a></li>
+<li><a href ="index7.html">①外部設計.内部設計</a></li>
+<li><a href ="index8.html">②データベースの作成</a></li>
+<li><a href ="index9.html">③それぞれのクラス</a></li>
+
+
+        </ul>
+        
+    </div>
+    <div class="container">
+        <h1>③それぞれのクラス</h1>
+    </div>
+    <div class="container">
+        <h1>主な依存関係</h1>
+        <h2>型：Maven　Javaversion：17</h2>
+        <h2>プロジェクト名：Todocharenge</h2>
+        <img src="izon.jpg" alt="Java Image">
+       
+    </div>
+
+    <div class="container">
+        <h1>1.DBに接続しよう</h1>
+        <h2>applicationpropertiesを書こう</h2>
+        <img src="app.jpg" alt="PHP Image">
+       
+    </div>
+    <div class="container">
+        <h1>Mapper.xml</h1>マッパーの定義: mapper タグ内の namespace 属性は、このマッパーがどのJavaインタフェースと関連付けられるかを指定します。つまり、このマッパーは com.todoo.app.mapper.TodoMapper インタフェースと対応しています。
+        <p></p>
+        <img src="XML.png" alt="PHP Image">
+    </div>
+    <div class="container">
+        <h2>テーブルのデータを保持するためのentityクラス</h2>
+        <img src="entity.png" alt="PHP Image">
+        <p>@Data アノテーションは、プロジェクトで Lombok ライブラリを使用する場合に便利なアノテーションの1つです。このアノテーションをクラスに付与すると、Lombok がコンパイル時に自動的にコードを生成します。具体的には、以下のメソッドを自動的に生成します。</p>
+    </div>
+
+    <div class="container">
+        <h1>Mapperクラス</h1>
+        <p>MyBatis を使用してデータベースとやり取りするためのマッパーインターフェースです。MyBatis は、SQL クエリと Java メソッドをマッピングすることで、データベースとのやり取りをシンプルにします。</p>
+       
+        <img src="TodoMapper.png" alt="PHP Image">
+        <p>@Mapperアノテーションにより、MyBatis が XML の SQL 情報から自動で作成してくれます。これによってJava コード内で SQL クエリを直接記述する必要がなくなり、データベースとのやり取りが簡素化されます。
+        </p>
+    </div>
+    <div class="container">
+        <h1>TodoControllerクラス</h1>
+        <h2>Spring Framework を使用して Web アプリケーション内の HTTP リクエストを処理するコントローラーです</h2>
+        <img src="TodoController.png" alt="PHP Image">
+    </div>
+    <div class="container">
+        <h1>HTML</h1>
+        
+        <img src="html.png" alt="PHP Image">
+       <p>
+       <ul>Thymeleafの名前空間: <html> 要素内で xmlns:th="http://www.thymeleaf.org" を指定しています。これにより、Thymeleafの属性を使用することができます。</ul>
+
+        <ul>HTML構造: HTMLの構造は通常のものと同様ですが、Thymeleafの属性を使用して動的なコンテンツを挿入することができます。</ul>
+        
+       <ul>HTML要素とThymeleaf属性: Thymeleafの属性は th: で始まります。例えば、th:text は要素のテキスト内容を置き換えます。</ul> 
+        
+        <ul>データバインディング: th:object 属性は、フォームのデータバインディングに使用されます。th:field 属性は、フォームのフィールドとオブジェクトのプロパティをバインドします。</ul>
+        
+       <ul>反復処理: Thymeleafは反復処理をサポートしており、th:each 属性を使用してリストや配列の要素を反復処理できます。</ul> 
+        
+       <ul>条件付きレンダリング: th:if や th:unless 属性を使用して、条件に基づいてHTML要素をレンダリングすることができます。</ul> 
+        
+        <ul>リンクとフォームの処理: リンクやフォームは、通常のHTMLと同様に記述されますが、Thymeleafの属性を使用してサーバーへのリクエストを処理するためのアクションやパラメーターを指定することができます。</ul>
+    </p>
+
+    <div class="container">
+        <h1>感想</h1>
+     <p>今回のTodoアプリを通して、データベースを使用しアプリを作ること自体初体験でした。始めは、外部設計から内部設計の基礎を学びました。そこから、データベースの接続方法に苦戦しました。反省点としては、少しでも進歩した場合、１回１回動作確認をするべきだという事です。仮に修正して一気に実行し、エラーが起きた際に原因を特定することが困難なため、注意です。</p>
+       
+    </div>
+    </div>
+</body>
+</html>

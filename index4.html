@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSとは
+    </title>
+    <link rel="stylesheet" href="style4.css" />
+   
+  </head>
+  <body>
+    <div class="button-container">
+        <a href="index.html" class="button" id="selfIntroButton">ホームに戻る</a>
+
+       
+    </div>
+    <!-- section01 -->
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">サーバについて</h2>
+        <div class="content">
+         
+         <div class="text-box">
+            <h3>そもそもサーバって？</h3>
+            <p>
+               簡単にいうと、何かサービスを提供するもの。Webサービスを提供するのはWebサーバ。メールを提供するなら、メールサーバ。
+               このように、○○サーバとよばれています。<br>
+               サーバの機能は、ソフトウェア上で提供されています。ソフトウェアをいくついれても、サービスを同居できるのです。
+            </p>
+        </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- section02 -->
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">サーバの役割</h3>
+        <div class="content">
+         
+          <div class="info">
+            <h4 class="info-title"></h4>
+            <p>
+              サーバの役割は、インターネット経由で使用するもの（広範囲）と、イントラネットやLAN内で使用するもの(狭い範囲)の2つがあります。<br>
+            ①インターネットで利用するもの<br>
+            代表的なWebサーバ、メールサーバ、FTPサーバなど。これらのサーバは、様々な人がアクセスするものです。<br>
+            特に、Webサーバとメールサーバは、レンタルサーバなどの形で1つのコンピュータに複数の管理者が同居する例が多い。<br>
+            求められるものは、アクセス権限の厳密な管理、公開範囲、セキュリティである。<br>
+            ②イントラネットで利用するもの<br>
+            ファイルサーバなどのイントラネット内で利用するサーバにアクセスする人は、身内の人間です。<br>
+            セキュリティよりも使い手によってかわる事が特徴です。（Windowsであればそれに合うソフトウェアを選ぶ）
+                  
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-03">
+        <div class="container">
+          <h3 class="section-title"></h3>
+          <div class="content">
+            <div class="image">
+                <img src="os.png" alt="" />
+              </div>
+            <div class="info">
+              <h4 class="info-title">サーバ用OSの種類について</h4>
+              <p>
+              サーバ用のOSはWindows系とUNIX系の2種類に分かれます。UNIX系の派生として、Linux系とBSD系、Solaris系などがあり、本サイトでは無償で提供されているCentOSを使用してLinuxを扱っていきます。<br>
+              代表的な有償サーバ用のOSとして、Windowsサーバ、Red Hat Enterprise Linuxなどが挙げられます。<br>
+              UNIX系では、LinuxとBSD系が大きな勢力であり、Linuxには更にいくつかの種類に分かれます。（ディストリビューションという）<br>
+              ディストリビューション<br>
+              ↓↓↓↓↓
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-04">
+        <div class="container">
+          <h3 class="section-title"></h3>
+          <div class="content">
+           
+            <div class="info">
+              <h4 class="info-title">ディストリビューションについて</h4>
+              <p>
+                カーネル（OSのメモリやディスクの読み書き、プログラムの起動、通信などの基本的な機能）のみでは、新たなOSの環境構築はできません。<br>
+                外部の命令を実行するプログラムがなければOSとして機能しないということです。そこで、コミュニティや会社がカーネルにプログラムを加えてセットで提供し、一気にインストールできるようにしました。これをディストリビューションといいます。<br>
+                現在主流のディストリビューション<br>
+            　　①Red　Hat系<br>
+            Red Hat社が配布している（有償）Red　Hat Enterprise Linuxを中心とした系列です。CentOSというOSが配布されており、サポートはありません。<br>
+            ②Debian系<br>
+            DebianとUbuntuが有名です。Ubuntuはdesktop利用で人気があります。また、LTSという5年間のセキュリティアップデートが提供されているため、サーバ用としても使いやすいという特徴があります。
+
+  
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+    <!-- section03 -->
+    <section class="sec-05">
+      <div class="container">
+        <h4 class="section-title">実際にWebサーバを動かしてみよう</h3>
+        <div class="content">
+          <div class="media-info">
+            <h4>
+              <a href="index5.html">①virtualboxとCentOSのダウンロード方法</a>
+            </h4>
+            <h4>
+              <a href="index6.html">②CentOSを操作してみよう</a>
+            </h4>
+            <h4>
+              <a href="#">③Webサーバを使ってみよう</a>
+            </h4>
+            <h4    >
+              <a href="#">④SSHで遠隔操作してみよう</a>
+            </h4>
+            
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      //共通のオプション設定
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2000, //2sかけてアニメーション
+        delay: 200 /* 0.2s後に発動 */,
+      });
+
+      ScrollReveal().reveal(".main-title, .section-title", {
+        delay: 200,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".sec-01 .image, .info", {
+        delay: 600,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".text-box", {
+        delay: 700,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".media-icons i", {
+        delay: 500,
+        origin: "bottom",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+        delay: 500,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".media-info h4", {
+        delay: 500,
+        origin: "left",
+        interval: 200,
+      });
+    </script>
+  </body>
+</html>
+<!--https://nitkpc.com/img/unix/os_family.png-->

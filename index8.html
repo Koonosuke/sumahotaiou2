@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaでTodoアプリ作ってみた</title>
+    <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+    <!-- メニューバー -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">ホームに戻る</a></li>
+        
+        </ul>
+        
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuBar = document.getElementById("menuBar");
+            if (menuBar.style.width === "100%") {
+                menuBar.style.width = "0";
+            } else {
+                menuBar.style.width = "100%";
+            }
+        }
+    </script>
+    <div class="container">
+        <h1>JavaTodoリスト制作の流れ</h1>
+        <ul>
+<li><a href ="index10.html">完成（まずは見てみよう）</a></li>
+<li><a href ="index7.html">①外部設計.内部設計</a></li>
+<li><a href ="index8.html">②データベースの作成</a></li>
+<li><a href ="index9.html">③それぞれのクラス</a></li>
+
+
+        </ul>
+        
+    </div>
+    <div class="container">
+        <h1>②データベースの作成</h1></div>
+    <div class="container">
+        <h1>PostgreSQLとは</h1>
+        <img src="postgreSQL.jpg" alt="Java Image">
+        <p>PostgreSQL（ポストグレスキューエル）は、オープンソースのリレーショナルデータベース管理システム（RDBMS）です。様々なデータ型をサポートしており、整数、文字列、日付、配列、JSON、XMLなどのデータを格納できます。また、ユーザー定義のデータ型もサポートしています。</p>
+    </div>
+
+    <div class="container">
+        <h1>SQL Shellを使おう！</h1>
+        <h2>ユーザ名とpasswordを設定しよう</h2>
+        <img src="SQL1.jpg" alt="PHP Image">
+       
+    </div>
+
+    <div class="container">
+        <h2>ユーザー一覧</h2>
+        <img src="SQL2.jpg" alt="PHP Image">
+    </div>
+
+    <div class="container">
+        <h1>データベースの作成</h1>
+        <h2>ここではtodo_dbs</h2>
+        <img src="SQL3.jpg" alt="PHP Image">
+    </div>
+    <div class="container">
+        <h1>データベースへの接続</h1>
+        <h2>todo_dbsに作成したユーザー名で接続（パスワードも入力）</h2>
+        <img src="SQL4.jpg" alt="PHP Image">
+    </div>
+    <div class="container">
+        <h1>具体的な属性を作成して、確認</h1>
+        <img src="SQL5.jpg" alt="PHP Image">
+    </div>
+    <div class="container">
+        <h1>③それぞれのクラスと画面表示</h1>
+        <a href="index9.html" class="next-button">次へ</a>
+    </div>
+</body>
+</html>

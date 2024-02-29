@@ -1,0 +1,96 @@
+/* スマートフォン向けスタイル */
+@media only screen and (max-width: 768px) {
+  /* ナビゲーションメニューのスタイル調整 */
+  .navigation {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .navigation ul {
+    padding-top: 10px;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .navigation ul li {
+    width: auto;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .navigation ul li.active {
+    background-color: transparent;
+  }
+  
+  .navigation ul li a {
+    padding: 10px;
+  }
+  
+  /* Heroセクションのスタイル調整 */
+  .hero {
+    height: auto;
+    padding-top: 100px;
+  }
+  
+  .content .body {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .content .body img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* もっと読むボタンのスタイル調整 */
+  a.button {
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* サービスセクションのスタイル調整 */
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .card i {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+  /* お問い合わせセクションのスタイル調整 */
+  .contact p {
+    font-size: 24px;
+  }
+  
+  .contact .button-two {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* フッターのスタイル調整 */
+  footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}

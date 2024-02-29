@@ -1,0 +1,108 @@
+ /* CSS スタイルを追加 */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+   
+        background: url('R.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #5cbcc5f5;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    height: auto;
+    text-align: center; /* テキストを中央揃えにする */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+}.next-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+
+.container h1, .container p {
+    margin: 10px; /* テキストのマージンを追加 */
+}
+
+
+pre {
+    background-color: #e8e2e2;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+ /* メニューバーのスタイル */
+ .menu-bar {
+    background-color: #73d41d;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu-bar ul li {
+    float: left;
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #35ac3d;
+}
